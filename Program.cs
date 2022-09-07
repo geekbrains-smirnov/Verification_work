@@ -22,6 +22,24 @@ void PrintStrings(string[] strs)
         Console.WriteLine();
 }        
 
+void StringsNew(string[] strs, string[]str)
+{
+    int count = 0;
+    for(int i = 0; i<strs.Length; i++)
+    {
+        if(strs[i].Length<=3)
+        {
+            str[count] = strs[i];
+            count++;
+        }
+        
+    }
+}
+AmountStrings(strs);
+StringsNew(strs,str);
+Console.WriteLine();
+Console.WriteLine("Массив из строк с символами меньше или равное 3: ");
+PrintStrings(str);
 
 
 
